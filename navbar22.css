@@ -1,0 +1,127 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    height: 100vh;
+    width: 400px;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+i{
+    list-style: none;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 3.2;
+    align-items: center;
+    padding: 10px;
+}
+
+span{
+    color: rgba(0, 0, 255, 0.378);
+}
+
+.nav-middle{
+padding-left: 17px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+height: 320px;
+font-size: 2.0rem;
+}
+
+.nav-middle li:hover{
+background-color: aquamarine;
+width: 230px;
+height: 50px;
+}
+
+.nav-red{
+color: red;
+font-size: 2.4rem;
+display: flex;
+padding-left: 190px;
+/* background-color: aqua; */
+width: 320px;
+height: 50px;
+
+}
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 1.1rem;
+    padding-top: 600px;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    font-size: 2.6rem;
+    transition: all 1000ms;
+    display: flex;
+    justify-content: end;
+    width: 1700px;
+    margin-top: 30px;
+    height: 50px;
+    /* background-color: blue; */
+    justify-self: flex-end;
+}
+.hamburger-menu.rotate {
+    transform: rotate(1deg);
+    transition: transform 1000ms;
+    
+}
+
+
+.leave{
+    display: none;
+}
+
+@media (max-width:800px){
+
+    body{
+        height: 100vh;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+    }
+    .container{
+        height: 100vh;
+        width: 800px ;
+        background-color: blueviolet;
+        overflow: hidden;
+    }
+
+    .nav-red{
+        color: red;
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        width: 700px;
+
+        }
+
+        .hamburger-menu {
+            display: none;
+        }
+        
+
+}
